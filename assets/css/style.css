@@ -1,3 +1,13 @@
+
+body {
+    padding-bottom: 7em;
+}
+
+h2 {
+    padding-top: 2em;
+    text-align: center;
+}
+
 .header {
     font-size: 36px;
     text-align: center;
@@ -9,4 +19,12 @@
     text-align: justify;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.poem {
+    padding-bottom: 3em;
+}
+
+.card-body {
+    margin-top: 6em;
 }
