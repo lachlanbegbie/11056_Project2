@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 
 html {
     background: linear-gradient(to top, #7784a8, #e7b488);
@@ -6,17 +6,22 @@ html {
 
 h1 {
     margin: 0em;
-    color: #ffffff!important;
-    font-weight: 650!important;
+    color: #ffffff;
+    font-family: 'Castoro Titling', cursive;
+    font-weight: 650;
+    text-align: center;
+    padding: 0em 2em 2.3em 2em;
 }
 
 body {
-    padding-bottom: 7em;
-
     background: linear-gradient(to bottom, #7784a8, #e7b488);
+    
+    padding-bottom: 4em;
 }
 
 h2 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 1.6em;
     padding-top: 2em;
     text-align: center;
 }
@@ -24,11 +29,33 @@ h2 {
 .header {
     font-size: 36px;
 
-    height: 6em;
+    height: 4em;
     display: flex;
 
     justify-content: center;
     align-items: center;
+}
+
+.navbar {
+    justify-content: right;
+    background: none;
+
+    padding: 1.5em;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 1.1em;
+    padding-right: 1.8em;
+}
+
+.nav-link:hover {
+    color: #bbbbbb;
+}
+
+.bg-body-tertiary {
+    background-color: #7b85a4!important;
 }
 
 .paragraph {
@@ -36,7 +63,6 @@ h2 {
     text-align: justify;
 
     margin: 30px 12%;
-    /* width: 70%; */
 }
 
 .poem {
@@ -44,15 +70,21 @@ h2 {
     padding-bottom: 3em;
 }
 
-.para {
-    height: 27em;
+.modal-dialog {
+    max-width: 600px;
+}
+
+h1.modal-title {
+    color: #000000;
+    padding: 0;
+    align-items: center;
 }
 
 .card-body {
     margin-top: 6em;
     margin: 6em 2em 0em 2em;
 
-    columns: 2;
+    background: none;
 }
 
 .col-md-12 {
@@ -62,13 +94,7 @@ h2 {
     padding: 1em;
 }
 
-.col-md-4 {
-    margin: 0em;
-}
-
 .content {
-    /* background-color: white; */
-
     width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -77,15 +103,98 @@ h2 {
 }
 
 .row {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
 
     justify-content: center;
 
-    margin: 0em 5% 5vw 5%!important;
-    width: 90%;
+    margin: 0em 3% 3vw 3%;
+    width: 94%;
 }
 
-#bottomrow {
-    padding-bottom: 5em;
+.row > * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#scrollspyHeading2 {
+    padding: 0 3em 4.5em 3em;
+}
+
+.timeline-title {
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    border-bottom: #000000 2px solid;
+}
+
+.carousel-inner > :not(.active) {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.carousel-item {
+    float: none;
+    transition: transform 0.2s ease-in;
+    position:inherit;
+
+    margin-right: 100%;
+}
+
+.carousel-item-next.carousel-item-left{
+    display: block;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 8%;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/next.png);
+    background-size: contain;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/previous.png);
+    background-size: contain;
+}
+
+.timeline-content {
+    width: 40%;
+    margin: 0% auto;
+    padding-bottom: 2em;
+    padding-top: 0;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    left: 49.5%;
+    height: 1px;
+    width: 20px;
+
+    border-top: #000000 20px solid;
+}
+
+.timeline-item > * {
+    text-align: center;
+}
+
+.timeline-item h2 {
+    padding-bottom: 1em;
+}
+
+
+@media screen and (max-width: 78em) {
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .timeline-content::before {
+        left: 49%;
+    }
 }

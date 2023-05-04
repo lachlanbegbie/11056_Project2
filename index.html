@@ -4,143 +4,392 @@
 <head>
     <meta charset="UTF-8">
     <title>Australian Poetry</title>
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/carousel.js"></script>
 </head>
 
 <body>
     <header>
+        <nav class="navbar bg-body-tertiary px-3 mb-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading1">History</a></li>
+                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">Poems</a></li>
+                <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Timeline</a></li>
+            </ul>
+        </nav>
+
         <h1 class="header">A History of Australian Poetry</h1>
     </header>
 
+    <!-- History -->
     <div class="content">
-        <div class="row">
+        <div class="row" id="scrollspyHeading1">
             <div class="col-md-12">
-                <p class="paragraph">Australian poetry has a long and rich history dating back to the 19th century.
+                <p class="paragraph">
+                    Australian poetry has a long and rich history dating back to the 19th century.
                     During this time, poets began to explore themes and subjects unique to the Australian landscape,
                     such as the ruggedness of the bush, the harshness of the outback, and the relationship between
-                    people and the land.</p>
+                    people and the land.
+                </p>
 
-                <p class="paragraph">One of the most famous Australian poets of the 19th century was Banjo Patterson,
+                <p class="paragraph">
+                    One of the most famous Australian poets of the 19th century was Banjo Patterson,
                     whose works such as The Man From Snowy River and Clancy of the Overflow have become iconic
-                    representations of Australian culture and identity.</p>
+                    representations of Australian culture and identity.
+                </p>
 
-                <p class="paragraph">In the 20th century, Australian poetry continued to evolve, with poets like
+                <p class="paragraph">
+                    In the 20th century, Australian poetry continued to evolve, with poets like
                     Dorothea MacKellar and Oodgeroo Noonuccal exploring issues related to national identity,
                     multiculturalism, and Indigenous rights. Today, Australian poetry is a vibrant and diverse art form
-                    that continues to reflect the complexities and contradictions of the Australian experience.</p>
+                    that continues to reflect the complexities and contradictions of the Australian experience.
+                </p>
             </div>
         </div>
-        
-        <div class="row" id="bottomrow">
+
+        <!-- Poems -->
+        <div class="row" id="scrollspyHeading2">
             <div class="col-md-6 poem">
-                <div class="para">
+                <!-- Man From Snowy River -->
+                <div>
                     <h2>The Man From Snowy River</h2>
-                    <p class="paragraph">The Man From Snowy River is a poem by Banjo Patterson, first published in The
-                        Bulletin magazine in 1890. The poem tells the story of a horseback pursuit to recapture a valuable
-                        colt that has escaped into the wilds of the Snowy Mountains. The poem is considered a quintessential
-                        representation of the Australian bush and its people.</p>
+                    <p class="paragraph">
+                        The Man From Snowy River is a poem by Banjo Patterson, first published in The Bulletin magazine 
+                        in 1890. The poem tells the story of a horseback pursuit to recapture a valuable colt that has 
+                        escaped into the wilds of the Snowy Mountains. The poem is considered a quintessential
+                        representation of the Australian bush and its people.
+                    </p>
 
-                    <p class="paragraph">Banjo Patterson was born in 1864 and is considered one of Australia's most famous
-                        poets. He wrote many other famous poems, like Waltzing Matilda and Clancy of the Overflow.</p>
+                    <p class="paragraph">
+                        Banjo Patterson was born in 1864 and is considered one of Australia's most famous poets. He wrote 
+                        many other famous poems, like Waltzing Matilda and Clancy of the Overflow.
+                    </p>
 
-
-                    <a class="btn btn-success position-absolute start-50 translate-middle-x" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample">
+                    <button type="button" class="btn btn-success position-absolute start-50 translate-middle-x" data-bs-toggle="modal" data-bs-target="#snowyModal">
                         Read "The Man From Snowy River"
-                    </a>
-                </div>
-
-                
-                <div class="collapse hide" id="collapseExample1">
-                    <div class="card card-body">
-                        <span>
-                            <strong>Man From Snowy River by AB 'Banjo' Patterson</strong> <br><br> 
-                            
-                            There was movement at the station, for the word had passed around <br> That the colt from Old Regret had got away, <br> And had joined the wild bush horses -  he was worth a thousand pound, <br> So all the cracks had gathered to the fray. <br> All the tried and noted riders from the stations near and far <br> Had mustered at the homestead overnight, <br> For the bushmen love hard riding where the wild bush horses are, <br> And the stock-horse snuffs the battle with delight. <br><br>
-
-                            There was Harrison, who made his pile when Pardon won the cup, <br> The old man with his hair as white as snow; <br> But few could ride beside him when his blood was fairly up — <br> He would go wherever horse and man could go. <br> And Clancy of the Overflow came down to lend a hand, <br> No better horseman ever held the reins; <br> For never horse could throw him while the saddle girths would stand, <br> He learnt to ride while droving on the plains. <br><br>
-
-                            And one was there, a stripling on a small and weedy beast; <br> He was something like a racehorse undersized, <br> With a touch of Timor pony — three parts thoroughbred at least — <br> And such as are by mountain horsemen prized. <br> He was hard and tough and wiry — just the sort that won't say die — <br> There was courage in his quick impatient tread; <br> And he bore the badge of gameness in his bright and fiery eye, <br> And the proud and lofty carriage of his head. <br>
-                        </span>
-                    </div>
+                    </button>
                 </div>
             </div>
 
+            <!-- My Country -->
             <div class="col-md-6 poem">
-                <div class="para">
+                <div>
                     <h2>My Country</h2>
-                    <p class="paragraph">My Country is a poem by Dorothea MacKellar, first published in 1908. The poem
-                        celebrates the beauty and diversity of the Australian landscape, and expresses the author's love for
-                        her country. The poem is often quoted in nationalistic contexts and has become a symbol of
-                        Australian identity.</p>
-    
-                    <p class="paragraph">Dorothea MacKellar was born in 1885 and grew up on a property near Gunnedah in New
-                        South Wales. She wrote many other famous poems, including Core of My Heart, My Country and Colours
-                        of the Light.</p>
-    
-    
-                    <a class="btn btn-success position-absolute start-50 translate-middle-x" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample">
-                        Read "My Country"
-                    </a>
-                </div>
+                    <p class="paragraph">
+                        My Country is a poem by Dorothea MacKellar, first published in 1908. The poem celebrates the beauty 
+                        and diversity of the Australian landscape, and expresses the author's love for her country. The poem 
+                        is often quoted in nationalistic contexts and has become a symbol of Australian identity.</p>
 
-                <div class="collapse hide" id="collapseExample2">
-                    <div class="card card-body">
-                        <span>
-                            <strong>My Country by Dorothea MacKellar</strong> <br><br>
-                            
-                            The love of field and coppice, <br> Of green and shaded lanes. <br> Of ordered woods and gardens <br> Is running in your veins, <br> Strong love of grey-blue distance <br> Brown streams and soft dim skies <br> I know but cannot share it, <br> My love is otherwise.<br><br>
-                            
-                            I love a sunburnt country, <br> A land of sweeping plains, <br> Of ragged mountain ranges, <br> Of droughts and flooding rains. <br> I love her far horizons, <br> I love her jewel-sea, <br> Her beauty and her terror - <br> The wide brown land for me!<br><br>
-                            
-                            A stark white ring-barked forest <br> All tragic to the moon, <br> The sapphire-misted mountains, <br> The hot gold hush of noon. <br> Green tangle of the brushes, <br> Where lithe lianas coil, <br> And orchids deck the tree-tops <br> And ferns the warm dark soil.<br><br>
-                            
-                            Core of my heart, my country! <br> Her pitiless blue sky, <br> When sick at heart, around us, <br> We see the cattle die - <br> But then the grey clouds gather, <br> And we can bless again <br> The drumming of an army, <br> The steady, soaking rain.<br><br>
-                            
-                            Core of my heart, my country! <br> Land of the Rainbow Gold, <br> For flood and fire and famine, <br> She pays us back threefold - <br> Over the thirsty paddocks, <br> Watch, after many days, <br> The filmy veil of greenness <br> That thickens as we gaze.<br><br>
-                            
-                            An opal-hearted country, <br> A wilful, lavish land - <br> All you who have not loved her, <br> You will not understand - <br> Though earth holds many splendours, <br> Wherever I may die, <br> I know to what brown country <br> My homing thoughts will fly.
-                        </span>
-                    </div>
+                    <p class="paragraph">
+                        Dorothea MacKellar was born in 1885 and grew up on a property near Gunnedah in New South Wales. She 
+                        wrote many other famous poems, including Core of My Heart and Colours of the Light.
+                    </p>
+
+
+                    <button type="button" class="btn btn-success position-absolute start-50 translate-middle-x" data-bs-toggle="modal" data-bs-target="#countryModal">
+                        Read "My Country"
+                    </button>
                 </div>
             </div>
 
+            <!-- We Are Going -->
             <div class="col-md-6 poem">
-                <div class="para">
+                <div>
                     <h2>We Are Going</h2>
                     <p class="paragraph">
                         We Are Going is a poem by Oodgeroo Noonuccal, first published in 1964. The poem explores the
                         displacement and marginalization of Indigenous Australians in the wake of European colonization. It
                         is considered one of the most important works of Indigenous Australian poetry and a powerful
-                        statement of resistance and identity.</p>
+                        statement of resistance and identity.
+                    </p>
 
-                    <p class="paragraph">Oodgeroo Noonuccal, formerly known as Kath Walker, was born in 1920 on Stradbroke
-                        Island in Queensland. She was a prominent activist for Indigenous rights and a prolific writer,
-                        publishing many works of poetry, fiction, and non-fiction.</p>
+                    <p class="paragraph">
+                        Oodgeroo Noonuccal, formerly known as Kath Walker, was born in 1920 on Stradbroke Island in 
+                        Queensland. She was a prominent activist for Indigenous rights and a prolific writer, publishing 
+                        many works of poetry, fiction, and non-fiction.
+                    </p>
 
-
-                    <a class="btn btn-success position-absolute start-50 translate-middle-x" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true" aria-controls="collapseExample">
+                    <button type="button" class="btn btn-success position-absolute start-50 translate-middle-x" data-bs-toggle="modal" data-bs-target="#goingModal">
                         Read "We Are Going"
-                    </a>
+                    </button>
                 </div>
+            </div>
+        </div>
 
+        <!-- Timeline of Significant Works and Events -->
+        <div class="row" id="scrollspyHeading3">
+            <h2 class="timeline-title">Timeline of Australian Poetry</h2>
 
-                <div class="collapse hide" id="collapseExample3">
-                    <div class="card card-body">
-                        <strong>We Are Going by Oodgeroo Noonuccal</strong> <br><br>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="timeline-header"></div>
 
-                        They came in to the little town <br> A semi-naked band subdued and silent <br> All that remained of their tribe. <br> They came here to the place of their old bora ground <br> Where now the many white men hurry about like ants. <br> Notice of the estate agent reads: 'Rubbish May Be Tipped Here'. <br> Now it half covers the traces of the old bora ring. <br> 'We are as strangers here now, but the white tribe are the strangers. <br> We belong here, we are of the old ways. <br> We are the corroboree and the bora ground, <br> We are the old ceremonies, the laws of the elders. <br> We are the wonder tales of Dream Time, the tribal legends told. <br> We are the past, the hunts and the laughing games, the wandering camp fires. <br><br>
+                    <div class="carousel-item active timeline-item">
+                        <div class="timeline-content">
+                            <h2>1800s</h2>
 
-                        We are the lightening bolt over Gaphembah Hill <br> Quick and terrible, <br> And the Thunderer after him, that loud fellow. <br> We are the quiet daybreak paling the dark lagoon. <br> We are the shadow-ghosts creeping back as the camp fires burn low. We are nature and the past, all the old ways <br> Gone now and scattered. <br> The scrubs are gone, the hunting and the laughter. <br> The eagle is gone, the emu and the kangaroo are gone from this place. The bora ring is gone. <br> The corroboree is gone. <br> And we are going.' <br><br>
+                            <p>
+                                Early colonial poetry in Australia is predominantly written by British settlers, focusing on
+                                themes of nature, patriotism, and colonialism. Notable works from this time include "The
+                                Convict's Tour to Hell" by Charles Tompson and "The Wild Colonial Boy" by anonymous.
+                            </p>
+                        </div>
                     </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1860</h2>
+
+                            <p>
+                                Adam Lindsay Gordon publishes his first collection of poems, "Sea Spray and Smoke Drift,"
+                                which features a mix of bush ballads and more introspective works. Gordon becomes known as
+                                one of the leading poets of the Australian bush.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1885</h2>
+
+                            <p>
+                                Early colonial poetry in Australia is predominantly written by British settlers, focusing on
+                                themes of nature, patriotism, and colonialism. Notable works from this time include "The
+                                Convict's Tour to Hell" by Charles Tompson and "The Wild Colonial Boy" by anonymous.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1890s</h2>
+
+                            <p>
+                                The "Bulletin School" of Australian poetry emerges, featuring writers such as Henry Lawson
+                                and A.B. "Banjo" Paterson. This movement focuses on the experiences of working-class Australians
+                                and is characterized by its use of colloquial language and bush settings.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1901</h2>
+
+                            <p>
+                                The Commonwealth of Australia is established, and with it comes a renewed interest in Australian
+                                identity and culture. This leads to a surge in patriotic poetry and works that celebrate the
+                                natural beauty of the country.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1915</h2>
+
+                            <p>
+                                Rupert Brooke's poem "The Soldier" inspires a wave of war poetry in Australia, as the country's
+                                troops are sent to fight in World War I. Notable works from this time include "In Flanders Fields"
+                                by John McCrae and "For the Fallen" by Laurence Binyon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1920s</h2>
+
+                            <p>
+                                The "Jindyworobak Movement" emerges, advocating for a return to Indigenous Australian culture and
+                                language in literature. Writers associated with this movement include Rex Ingamells and Mary Gilmore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1930s</h2>
+
+                            <p>
+                                The Great Depression prompts a new wave of social and political commentary in Australian poetry. Notable
+                                works from this time include Kenneth Slessor's "Five Bells" and Max Harris's "The Angry Penguins."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1950s</h2>
+
+                            <p>
+                                The "New Wave" of Australian poetry emerges, featuring writers such as Judith Wright, A.D. Hope, and James
+                                McAuley. This movement is characterized by its focus on modernist techniques and themes of alienation,
+                                existentialism, and urbanization.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1960s</h2>
+
+                            <p>
+                                A new generation of poets emerges, including Les Murray, Gwen Harwood, and Bruce Dawe. These writers focus on
+                                the experiences of everyday Australians and address social issues such as feminism, Vietnam War protests, and
+                                Indigenous rights.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1980s</h2>
+
+                            <p>
+                                Performance poetry becomes popular in Australia, with events such as the Nimbin Poetry Festival and the Sydney
+                                Poetry Olympics. Poets associated with this movement include Candy Royalle, PiO, and Michael Farrell.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>1990s</h2>
+
+                            <p>
+                                The "Martian" poetry movement emerges, featuring writers such as John Kinsella and Peter Porter. This movement is
+                                characterized by its use of science fiction and surrealism to explore contemporary issues.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>2000s</h2>
+
+                            <p>
+                                The rise of digital media and social networking platforms leads to a new generation of poets who use these technologies
+                                to share and promote their work. Notable online poets from Australia include Omar Sakr and Hera Lindsay Bird.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item timeline-item">
+                        <div class="timeline-content">
+                            <h2>2010s</h2>
+
+                            <p>
+                                The #MeToo movement inspires a new wave of feminist poetry in Australia, with writers such as Ellen van Neerven, Fiona
+                                Wright, and Alison Whittaker addressing issues of gender, sexuality, and power in their work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals -->
+    <!-- Snowy River -->
+    <div class="modal fade" id="snowyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Man From Snowy River</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    There was movement at the station, for the word had passed around <br> That the colt from
+                    Old Regret had got away, <br> And had joined the wild bush horses - he was worth a thousand
+                    pound, <br> So all the cracks had gathered to the fray. <br> All the tried and noted riders
+                    from the stations near and far <br> Had mustered at the homestead overnight, <br> For the
+                    bushmen love hard riding where the wild bush horses are, <br> And the stock-horse snuffs the
+                    battle with delight. <br><br>
+
+                    There was Harrison, who made his pile when Pardon won the cup, <br> The old man with his
+                    hair as white as snow; <br> But few could ride beside him when his blood was fairly up —
+                    <br> He would go wherever horse and man could go. <br> And Clancy of the Overflow came down
+                    to lend a hand, <br> No better horseman ever held the reins; <br> For never horse could
+                    throw him while the saddle girths would stand, <br> He learnt to ride while droving on the
+                    plains. <br><br>
+
+                    And one was there, a stripling on a small and weedy beast; <br> He was something like a
+                    racehorse undersized, <br> With a touch of Timor pony — three parts thoroughbred at least —
+                    <br> And such as are by mountain horsemen prized. <br> He was hard and tough and wiry — just
+                    the sort that won't say die — <br> There was courage in his quick impatient tread; <br> And
+                    he bore the badge of gameness in his bright and fiery eye, <br> And the proud and lofty
+                    carriage of his head. <br><br>
+
+                    <strong>Read More at <a href="https://allpoetry.com/The-Man-from-Snowy-River" target="_blank">AllPoetry.com</a></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Country -->
+    <div class="modal fade" id="countryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">My Country</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    The love of field and coppice, <br> Of green and shaded lanes. <br> Of ordered woods and
+                    gardens <br> Is running in your veins, <br> Strong love of grey-blue distance <br> Brown
+                    streams and soft dim skies <br> I know but cannot share it, <br> My love is
+                    otherwise.<br><br>
+
+                    I love a sunburnt country, <br> A land of sweeping plains, <br> Of ragged mountain ranges,
+                    <br> Of droughts and flooding rains. <br> I love her far horizons, <br> I love her
+                    jewel-sea, <br> Her beauty and her terror - <br> The wide brown land for me!<br><br>
+
+                    A stark white ring-barked forest <br> All tragic to the moon, <br> The sapphire-misted
+                    mountains, <br> The hot gold hush of noon. <br> Green tangle of the brushes, <br> Where
+                    lithe lianas coil, <br> And orchids deck the tree-tops <br> And ferns the warm dark
+                    soil.<br><br>
+
+                    <strong>Read More at <a href="https://allpoetry.com/poem/8526595-My-Country-by-Dorothea-Mackellar" target="_blank">AllPoetry.com</a></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- We Are Going -->
+    <div class="modal fade" id="goingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">We Are Going</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    They came in to the little town <br> A semi-naked band subdued and silent <br> All that remained
+                    of their tribe. <br> They came here to the place of their old bora ground <br> Where now the
+                    many white men hurry about like ants. <br> Notice of the estate agent reads: 'Rubbish May Be
+                    Tipped Here'. <br> Now it half covers the traces of the old bora ring. <br> 'We are as strangers
+                    here now, but the white tribe are the strangers. <br> We belong here, we are of the old ways.
+                    <br> We are the corroboree and the bora ground, <br> We are the old ceremonies, the laws of the
+                    elders. <br> We are the wonder tales of Dream Time, the tribal legends told. <br> We are the
+                    past, the hunts and the laughing games, the wandering camp fires. <br><br>
+
+                    We are the lightening bolt over Gaphembah Hill <br> Quick and terrible, <br> And the Thunderer
+                    after him, that loud fellow. <br> We are the quiet daybreak paling the dark lagoon. <br> We are
+                    the shadow-ghosts creeping back as the camp fires burn low. We are nature and the past, all the
+                    old ways <br> Gone now and scattered. <br> The scrubs are gone, the hunting and the laughter.
+                    <br> The eagle is gone, the emu and the kangaroo are gone from this place. The bora ring is
+                    gone. <br> The corroboree is gone. <br> And we are going.'
                 </div>
             </div>
         </div>
